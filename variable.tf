@@ -8,6 +8,11 @@ variable "subnet_cidr_blocks" {
   default     = ["10.0.1.0/24", "10.0.2.0/24"]
 }
 
+variable "public_subnet_cidr_block" {
+  description = "CIDR block for the public subnet"
+  default     = "10.0.3.0/24"
+}
+
 variable "region" {
   description = "AWS region"
   default     = "us-west-2"
