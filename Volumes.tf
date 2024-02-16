@@ -40,12 +40,12 @@ data "aws_ami" "latest" {
 
   filter {
     name   = "name"
-    values = ["your-ami-name-pattern*"]
+    values = ["AwsBackup*"]
   }
 
   filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
+    name   = "creation date"
+    values = ["2024-02-13"]
   }
 
   owners = ["amazon"]
